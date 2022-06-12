@@ -1,0 +1,34 @@
+body {
+	--color-dark: rgb(51, 51, 51);
+	--color-gray: rgb(204, 204, 204);
+}
+
+strong { margin: 0 0.2rem; }
+
+table, th, td {
+	border: solid 1px var(--color-dark);
+	border-collapse: collapse;
+}
+
+th, td { padding: 0.2rem; }
+
+#sec_calculator > p {
+	display: flex;
+	align-items: center;
+	width: 25rem;
+	height: 3rem;
+}
+
+#output {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20rem;
+	height: 100%;
+	margin-left: 1rem;
+	color: white;
+	background-color: var(--color-dark);
+	text-align: center;
+}
+
+.id { text-align: center; }
