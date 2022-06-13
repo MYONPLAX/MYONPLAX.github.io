@@ -3,6 +3,24 @@ body {
 	--color-gray: rgb(204, 204, 204);
 }
 
+input {
+	height: 2rem;
+	background-color: var(--color-gray);
+	border: none;
+	outline: none;
+}
+
+button {
+	height: 2rem;
+	border: none;
+	border-bottom: solid 0.2rem;
+	border-color: var(--color-gray);
+}
+
+button:hover { border-bottom-color: var(--color-dark); }
+
+button:active { border-bottom-color: white; }
+
 strong { margin: 0 0.2rem; }
 
 table, th, td {
@@ -12,20 +30,13 @@ table, th, td {
 
 th, td { padding: 0.2rem; }
 
-#sec_calculator > p {
-	display: flex;
-	align-items: center;
-	width: 25rem;
-	height: 3rem;
-}
-
 #output {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 20rem;
-	height: 100%;
-	margin-left: 1rem;
+	max-width: 350px;
+	width: 25rem;
+	height: 3rem;
 	color: white;
 	background-color: var(--color-dark);
 	text-align: center;
