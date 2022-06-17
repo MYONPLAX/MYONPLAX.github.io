@@ -107,7 +107,7 @@
 				<ol>
 					<li>処理中にエラーが発生するとエラーを出力する</li>
 					<ul>
-						<li>入力していないときの出力は<strong><code>Error 1: input is empty [function scan_input()]</code></strong></li>
+						<li>入力していないときの出力は<strong><code>Error 1: 何も入力されていません[fn scan_input()]</code></strong></li>
 						<li>エラーに関する詳細は<a href="#sec_error">エラーの説明</a>で確認</li>
 					</ul>
 					<li>計算結果は少数第10位まで表示され、それより小さい数は少数第11位を四捨五入する</li>
@@ -124,29 +124,27 @@
 			</section>
 			<section id="sec_error">
 				<h2>エラーの説明</h2>
-				<p>エラーメッセージには<strong>Full Message</strong>と<strong>Simple Message</strong>の二通りの出力方法がある</p>
+				<p>式が解釈できない場合、計算結果の代わりにエラーメッセージを返す</p>
 				<ul>
-					<li><strong>Full Message</strong>は「エラー番号」と「メッセージ」そして「発生した関数」を出力する</li>
-					<li><strong>Simple Message</strong>は「メッセージ」のみ出力する</li>
-					<li>このページの計算機は<strong>Full Message</strong>でエラーを出力する</li>
+					<li>エラーメッセージは<strong>「エラー番号」</strong>と<strong>「メッセージ」</strong>そして<strong>「発生した関数」</strong>を出力する</li>
 				</ul>
 
 				<h3>エラーメッセージの一覧</h3>
 				<table>
-					<tr><th>No</th><th>Full Message</th><th>Simple Message</th></tr>
-					<tr><td class="id">1</td><td>input is empty</td><td>input is empty</td></tr>
-					<tr><td class="id">2</td><td>input is too long</td><td>input is too long</td></tr>
-					<tr><td class="id">3</td><td>invalid token</td><td>invalid token</td></tr>
-					<tr><td class="id">4</td><td>invalid token in start</td><td>invalid token</td></tr>
-					<tr><td class="id">5</td><td>invalid token in end</td><td>invalid token</td></tr>
-					<tr><td class="id">6</td><td>invalid token before number</td><td>invalid token</td></tr>
-					<tr><td class="id">7</td><td>invalid token before operator</td><td>invalid token</td></tr>
-					<tr><td class="id">8</td><td>invalid token before (</td><td>invalid token</td></tr>
-					<tr><td class="id">9</td><td>invalid number</td><td>invalid number</td></tr>
-					<tr><td class="id">10</td><td>invalid operator</td><td>invalid operator</td></tr>
-					<tr><td class="id">11</td><td>() is not found</td><td>() is not found</td></tr>
-					<tr><td class="id">12</td><td>zero divide</td><td>zero divide</td></tr>
-					<tr><td class="id">_</td><td>unknown error</td><td>unknown error</td></tr>
+					<tr><th>エラー番号</th><th>エラーメッセージ</th></tr>
+					<tr><td class="id">1</td><td>何も入力されていません</td></tr>
+					<tr><td class="id">2</td><td>式が長すぎます</td></tr>
+					<tr><td class="id">3</td><td>無効な文字が入っています</td></tr>
+					<tr><td class="id">4</td><td>先頭に無効な文字が入っています</td></tr>
+					<tr><td class="id">5</td><td>末尾に無効な文字が入っています</td></tr>
+					<tr><td class="id">6</td><td>数値の前に無効な文字が入っています</td></tr>
+					<tr><td class="id">7</td><td>演算子の前に無効な文字が入っています</td></tr>
+					<tr><td class="id">8</td><td>( の前に無効な文字が入っています</td></tr>
+					<tr><td class="id">9</td><td>この数値は無効です</td></tr>
+					<tr><td class="id">10</td><td>この演算子は使用できません</td></tr>
+					<tr><td class="id">11</td><td>対応する () が見つかりません</td></tr>
+					<tr><td class="id">12</td><td>ゼロ除算はできません</td></tr>
+					<tr><td class="id">_</td><td>未知のエラーです</td></tr>
 				</table>
 			</section>
 		</main>
