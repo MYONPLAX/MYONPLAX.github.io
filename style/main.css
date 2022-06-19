@@ -3,10 +3,7 @@ body {
 	font-family: sans-serif;
 }
 
-a {
-	color: rgb(51, 51, 255);
-	text-decoration: none;
-}
+a { color: rgb(51, 51, 255); }
 
 a:hover { color: rgb(0, 153, 152); }
 
