@@ -5,14 +5,7 @@
 		<title>四則計算</title>
 		<link rel="stylesheet" type="text/css" href="../../style/main.css">
 		<link rel="stylesheet" type="text/css" href="./calculator.css">
-		<script type="module">
-			import {calculate, default as init} from "./script/calculator_wasm.js";
-			async function run() {
-				await init("./script/calculator_wasm_bg.wasm");
-				window.calculate = calculate;
-			}
-			run();
-		</script>
+		<script type="module" src="./script/load_calculator.js"></script>
 		<script src="./script/calculator.js"></script>
 	</head>
 	<body>

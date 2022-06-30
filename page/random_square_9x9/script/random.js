@@ -1,3 +1,5 @@
+'use strict';
+
 function random() {
   let rand_square = rand_square_9x9();
   let square = document.getElementsByClassName('number');

@@ -1,3 +1,5 @@
+'use strict';
+
 import {default as init, rand_square_9x9} from './random_number_9x9_wasm.js';
 
 async function run() {
