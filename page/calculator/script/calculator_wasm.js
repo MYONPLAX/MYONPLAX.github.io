@@ -79,15 +79,17 @@ function getStringFromWasm0(ptr, len) {
 }
 /**
  * @param {string} form
+ * @param {number} err_lv
+ * @param {number} err_lang
  * @returns {string}
  */
-export function calculate(form) {
+export function calculate(form, err_lv, err_lang) {
   try {
     const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
     const ptr0 = passStringToWasm0(
         form, wasm.__wbindgen_export_0, wasm.__wbindgen_export_1);
     const len0 = WASM_VECTOR_LEN;
-    wasm.calculate(retptr, ptr0, len0);
+    wasm.calculate(retptr, ptr0, len0, err_lv, err_lang);
     var r0 = getInt32Memory0()[retptr / 4 + 0];
     var r1 = getInt32Memory0()[retptr / 4 + 1];
     return getStringFromWasm0(r0, r1);
