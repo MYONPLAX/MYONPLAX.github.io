@@ -3,6 +3,12 @@ body {
 	--color-gray: rgb(204, 204, 204);
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+}
+
 input {
 	height: 2rem;
 	background-color: var(--color-gray);
@@ -35,8 +41,7 @@ th, td { padding: 0.2rem; }
 	justify-content: center;
 	align-items: center;
 	max-width: 350px;
-	width: 25rem;
-	height: 3rem;
+	min-height: 3rem;
 	color: white;
 	background-color: var(--color-dark);
 	text-align: center;
