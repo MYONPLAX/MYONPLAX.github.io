@@ -1,0 +1,46 @@
+main {
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+}
+
+input {
+	height: 2rem;
+	background-color: var(--color-gray);
+	border: none;
+	outline: none;
+}
+
+button {
+	width: 2.5rem;
+	height: 2rem;
+	border: none;
+	border-bottom: solid 0.2rem;
+	border-color: var(--color-gray);
+}
+
+button:hover { border-bottom-color: var(--color-dark); }
+
+button:active { border-bottom-color: white; }
+
+strong { margin: 0 0.2rem; }
+
+table, th, td {
+	border: solid 1px var(--color-dark);
+	border-collapse: collapse;
+}
+
+th, td { padding: 0.2rem; }
+
+#output {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 350px;
+	min-height: 3rem;
+	color: white;
+	background-color: var(--color-dark);
+	text-align: center;
+}
+
+.id { text-align: center; }

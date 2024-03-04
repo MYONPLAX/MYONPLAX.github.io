@@ -1,0 +1,153 @@
+:root {
+	--color-a: rgb(253, 239, 242);
+	--color-b: rgb(252, 202, 213);
+	--color-c: rgb(252, 151, 173);
+	--color-d: rgb(51, 48, 49);
+}
+
+html { font-family: 'Noto Sans', 'Noto Color Emoji', sans-serif; }
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--color-c);
+	background-color: var(--color-d);
+	touch-action: manipulation;
+}
+
+main, footer {
+	max-width: 60rem;
+	width: 80vw;
+}
+
+article {
+	margin: 1rem;
+	border: solid 1px;
+}
+
+article#sakwazoDwaat {
+	display: flex;
+	align-items: center;
+	height: 2.5rem;
+	border: none;
+	font-size: 1.25rem;
+}
+
+article#sakwazoDwaat > select {
+	height: inherit;
+	color: var(--color-c);
+	background-color: var(--color-d);
+	border: solid 1px var(--color-b);
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	font-size: 1rem;
+}
+
+article#hotoPrunusPersica { min-height: 90vh; }
+
+label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+span#sd__label { font-size: 0.9rem; }
+
+span#sd__demas {
+	font-size: 1.5rem;
+	margin-left: 0.5rem;
+}
+
+span#sd__reburo {
+	margin: 0 0.5rem;
+	font-size: 0.9rem;
+}
+
+button, option { background-color: var(--color-d); }
+
+button {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	color: var(--color-a);
+	background-color: var(--color-d);
+	border: solid 1px;
+	font-size: 1rem;
+	text-align: center;
+	box-shadow: inset 0 0 5px var(--color-c);
+}
+
+button:active {
+	color: var(--color-d);
+	background-color: var(--color-a);
+}
+
+button#redwaat { font-family: 'Noto Color Emoji'; }
+
+article#sakwazoDwaat > button { margin-left: 1rem; }
+
+.articleHead {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 1rem;
+}
+
+.articleHead > div > button { font-family: 'Noto Color Emoji'; }
+
+article > .abotoka {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#label__sd__demas, #label__sd__noz {
+	margin-left: 0.5rem;
+	font-size: 1.2rem;
+}
+
+textarea {
+	width: 90%;
+	margin-bottom: 1rem;
+	font-size: 1.15rem;
+	font-family: 'Noto Sans', 'Noto Color Emoji', sans-serif;
+}
+
+h1, h2, h3 { color: var(--color-a); }
+
+h1, h2 { font-weight: normal; }
+
+section { padding: 0 1rem; }
+
+p { color: var(--color-b); }
+
+a { color: var(--color-a) }
+
+a:hover { color: var(--color-b); }
+
+a:active { color: var(--color-c) }
+
+footer {
+	margin-top: 1rem;
+	padding-right: 1rem;
+	text-align: end;
+}
+
+@media screen and (orientation: portrait) {
+	main, footer {
+		width: 95vw;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	body { font-size: 0.8rem; }
+
+	article { margin: 1rem 0; }
+
+	button {
+		width: 2rem;
+		height: 2rem;
+	}
+}

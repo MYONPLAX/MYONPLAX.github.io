@@ -1,0 +1,35 @@
+body { touch-action: manipulation; }
+
+strong { margin: 0 0.2rem; }
+
+button {
+	width: 2.5rem;
+	height: 2rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-bottom: solid 0.2rem;
+	border-color: var(--color-gray);
+}
+
+button:hover { border-bottom-color: var(--color-dark); }
+
+button:active { border-bottom-color: white; }
+
+table, td {
+	border: solid 1px var(--color-dark);
+	border-collapse: collapse;
+}
+
+td {
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+}
+
+.left { border-left: solid 2px var(--color-dark); }
+
+.top { border-top: solid 2px var(--color-dark); }
+
+.right { border-right: solid 2px var(--color-dark); }
+
+.bottom { border-bottom: solid 2px var(--color-dark); }

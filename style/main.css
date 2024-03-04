@@ -1,0 +1,21 @@
+body {
+	--color-dark: rgb(51, 51, 51);
+	--color-gray: rgb(204, 204, 204);
+	font-family: 'Oxanium', 'Noto Color Emoji', 'BIZ UDGothic', 'Noto Sans', sans-serif;
+}
+
+main { min-height: 80vh; }
+
+footer {
+	margin-top: 1rem;
+	padding-right: 1rem;
+	text-align: end;
+}
+
+a { color: rgb(51, 51, 255); }
+
+a:hover { color: rgb(0, 153, 152); }
+
+a:active { color: rgb(245, 122, 122); }
+
+button { font-family: 'Oxanium', 'Noto Color Emoji', 'BIZ UDGothic', 'Noto Sans', sans-serif; }
