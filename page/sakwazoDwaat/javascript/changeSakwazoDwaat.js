@@ -9,7 +9,6 @@ const D_IFTD_LAT = {
     'Ṣ': 'TH',
     'Ḥ': 'HK',
     'Ç': 'TS',
-    'Ñ': 'NY',
     'ā': 'aa',
     'ē': 'ee',
     'ī': 'yi',
@@ -20,7 +19,6 @@ const D_IFTD_LAT = {
     'ṣ': 'th',
     'ḥ': 'hk',
     'ç': 'ts',
-    'ñ': 'ny'
 };
 const IFTD_D_LAT = {
     'AA': 'Ā',
@@ -33,7 +31,6 @@ const IFTD_D_LAT = {
     'TH': 'Ṣ',
     'HK': 'Ḥ',
     'TS': 'Ç',
-    'NY': 'Ñ',
     'Aa': 'Ā',
     'Ee': 'Ē',
     'Yi': 'Ī',
@@ -44,7 +41,6 @@ const IFTD_D_LAT = {
     'Th': 'Ṣ',
     'Hk': 'Ḥ',
     'Ts': 'Ç',
-    'Ny': 'Ñ',
     'aa': 'ā',
     'ee': 'ē',
     'yi': 'ī',
@@ -55,7 +51,6 @@ const IFTD_D_LAT = {
     'th': 'ṣ',
     'hk': 'ḥ',
     'ts': 'ç',
-    'ny': 'ñ'
 };
 const LAT_ELL = {
     'Ṣ': 'Θ',
@@ -258,7 +253,7 @@ function replaceRe(abotoka, list) {
     return abotoka.replace(re, match => list[match]);
 }
 function sigma(abotoka) {
-    const re = new RegExp('σ(?![a-zA-Zα-ωΑ-ΩᾱῑçščžñᾹῙÇŠČŽÑāēīōĀĒĪŌ])', 'g');
+    const re = new RegExp('σ(?![a-zA-Zα-ωΑ-ΩᾱῑçščžᾹῙÇŠČŽāēīōĀĒĪŌ])', 'g');
     return abotoka.replace(re, match => 'ς');
 }
 export function hweSDL1(abotoka) {

@@ -1,9 +1,8 @@
 const DcmELL = ['\u1FB9', '\u1FB1', '\u1FD9', '\u1FD1'];
 const DcmLAT = [
-    '\u00C7', '\u00E7', '\u0160', '\u0161', '\u010C', '\u010D',
-    '\u017D', '\u017E', '\u1E62', '\u1E63', '\u1E24', '\u1E25',
-    '\u00D1', '\u00F1', '\u0100', '\u0101', '\u0112', '\u0113',
-    '\u012A', '\u012B', '\u014C', '\u014D'
+    '\u00C7', '\u00E7', '\u0160', '\u0161', '\u010C', '\u010D', '\u017D',
+    '\u017E', '\u1E62', '\u1E63', '\u1E24', '\u1E25', '\u0100', '\u0101',
+    '\u0112', '\u0113', '\u012A', '\u012B', '\u014C', '\u014D'
 ];
 const karezhaELL1 = new RegExp(/[\u{03B1}-\u{03C9}\u{0391}-\u{03A9}]/u);
 export function checkSakwazoDwaat(abotoka) {
