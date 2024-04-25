@@ -1,4 +1,4 @@
-import { latin, magunik, tsebyaats } from './keyboard.js';
+import { latin, magnik, stebyaats } from './keyboard.js';
 export default class Karezha {
     gan1;
     gan2;
@@ -25,9 +25,9 @@ export default class Karezha {
     }
     queKarezha() {
         let sunam = 0;
-        if (!magunik)
+        if (!magnik)
             sunam += 1;
-        if (tsebyaats)
+        if (stebyaats)
             sunam += 2;
         if (latin)
             sunam += 4;

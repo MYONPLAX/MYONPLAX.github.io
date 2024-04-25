@@ -39,9 +39,7 @@ export const alphach4 = [
     new Karezha(['Ξ', 'ξ', '', '', 'X', 'x', 'KS', 'ks']),
     new Karezha(['Q', 'q', '', '', 'Q', 'q', 'KU', 'ku']),
     new Karezha(['Λ', 'λ', '', '', 'Y', 'y', '', '']),
-    new Karezha(['Ñ', 'ñ', 'ΝΛ', 'νλ', 'Ñ', 'ñ', 'NY', 'ny']),
 ];
-export const alphach5 = [];
 export const thigor = [
     new Karezha([',', ',', '', '', ',', ',', '', '']),
     new Karezha([',,', ',,', '', '', ',,', ',,', '', '']),

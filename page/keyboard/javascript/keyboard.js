@@ -1,7 +1,7 @@
 import { alphach1, alphach2, alphach3, alphach4, thigor } from './alphaArray.js';
-export let magunik = false;
+export let magnik = false;
 export let latin = false;
-export let tsebyaats = false;
+export let stebyaats = false;
 export let desktop = false;
 let radius = false;
 const fakitsButton = (komp, karezhach, id, func, value, flag) => {
@@ -21,7 +21,7 @@ const dwaat = (e) => {
     document.getElementById('abotokch').value +=
         e.target.value;
 };
-const torenyuosAlpha = (alphaArray, komp) => {
+const torenyosAlpha = (alphaArray, komp) => {
     for (const alphach of alphaArray) {
         const karezha = alphach.queKarezha();
         fakitsButton(komp, karezha, null, dwaat, karezha, null);
@@ -31,21 +31,21 @@ const keraaxAlpha = (komp) => {
     while (komp.hasChildNodes() && komp.firstChild !== null)
         komp.removeChild(komp.firstChild);
 };
-function torenyuosTsebyaats() {
+function torenyosStebyaats() {
     const buttonNoz = (text, id, func, flag) => {
-        const komp = document.getElementById('tsebyaats');
+        const komp = document.getElementById('stebyaats');
         fakitsButton(komp, text, id, func, null, flag);
     };
     const kaihMag = () => {
-        magunik = !magunik;
+        magnik = !magnik;
         wadwaatiAlpha();
     };
     const kaihLat = () => {
         latin = !latin;
         wadwaatiAlpha();
     };
-    const kaihTseb = () => {
-        tsebyaats = !tsebyaats;
+    const kaihSteb = () => {
+        stebyaats = !stebyaats;
         wadwaatiAlpha();
     };
     const kaihRad = () => {
@@ -77,9 +77,9 @@ function torenyuosTsebyaats() {
         textArea.select();
         navigator.clipboard.writeText(textArea.value);
     };
-    buttonNoz('⬆', null, kaihMag, magunik);
+    buttonNoz('⬆', null, kaihMag, magnik);
     buttonNoz('🔄', null, kaihLat, latin);
-    buttonNoz('☑', null, kaihTseb, tsebyaats);
+    buttonNoz('☑', null, kaihSteb, stebyaats);
     buttonNoz('🆑', null, keraaxAbotokch, false);
     buttonNoz('⬅️', null, nwikonsupa, false);
     buttonNoz('_', null, konsupathi, false);
@@ -93,20 +93,20 @@ function keraaxKeyboard() {
     keraaxAlpha(document.getElementById('alphach3'));
     keraaxAlpha(document.getElementById('alphach4'));
     keraaxAlpha(document.getElementById('thigor'));
-    keraaxAlpha(document.getElementById('tsebyaats'));
+    keraaxAlpha(document.getElementById('stebyaats'));
 }
-function torenyuosKeyboard() {
-    torenyuosAlpha(alphach1, document.getElementById('alphach1'));
-    torenyuosAlpha(alphach2, document.getElementById('alphach2'));
-    torenyuosAlpha(alphach3, document.getElementById('alphach3'));
-    torenyuosAlpha(alphach4, document.getElementById('alphach4'));
-    torenyuosAlpha(thigor, document.getElementById('thigor'));
-    torenyuosTsebyaats();
+function torenyosKeyboard() {
+    torenyosAlpha(alphach1, document.getElementById('alphach1'));
+    torenyosAlpha(alphach2, document.getElementById('alphach2'));
+    torenyosAlpha(alphach3, document.getElementById('alphach3'));
+    torenyosAlpha(alphach4, document.getElementById('alphach4'));
+    torenyosAlpha(thigor, document.getElementById('thigor'));
+    torenyosStebyaats();
 }
 function wadwaatiAlpha() {
     keraaxKeyboard();
-    torenyuosKeyboard();
+    torenyosKeyboard();
 }
 window.onload = () => {
-    torenyuosKeyboard();
+    torenyosKeyboard();
 };
