@@ -15,4 +15,4 @@ const wadwaatiLabel = () => {
     html_label_sd_demas.textContent = serakSakwazoDwaat(abotokaYuruf);
     html_label_sd_noz.textContent = serakSakwazoDwaat(abotokaNoz);
 };
-setInterval(wadwaatiLabel, 1000);
+setInterval(wadwaatiLabel, 500);

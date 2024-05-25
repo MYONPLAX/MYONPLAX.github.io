@@ -1,11 +1,9 @@
 :root {
-	--color-a: rgb(253, 239, 242);
-	--color-b: rgb(252, 202, 213);
-	--color-c: rgb(252, 151, 173);
-	--color-d: rgb(51, 48, 49);
+	--color-a: #fdeff2;
+	--color-b: #fccad5;
+	--color-c: #fc97ad;
+	--color-d: #333031;
 }
-
-html { font-family: 'Noto Sans', 'Noto Color Emoji', sans-serif; }
 
 body {
 	display: flex;
@@ -13,6 +11,7 @@ body {
 	align-items: center;
 	color: var(--color-c);
 	background-color: var(--color-d);
+	font-family: 'Noto Sans', sans-serif;
 	touch-action: manipulation;
 }
 
@@ -115,11 +114,10 @@ textarea {
 	font-family: 'Noto Sans', 'Noto Color Emoji', sans-serif;
 }
 
-h1, h2, h3 { color: var(--color-a); }
-
-h1, h2 { font-weight: normal; }
-
-section { padding: 0 1rem; }
+h1, h3 {
+	color: var(--color-a);
+	font-weight: normal;
+}
 
 p { color: var(--color-b); }
 
