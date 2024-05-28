@@ -17,6 +17,7 @@ button {
 	border: none;
 	border-bottom: solid 0.2rem;
 	border-color: var(--color-gray);
+	font-family: 'Oxanium', 'Noto Color Emoji', 'Noto Sans', sans-serif;
 }
 
 button:hover { border-bottom-color: var(--color-dark); }
