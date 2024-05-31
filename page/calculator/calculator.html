@@ -17,30 +17,35 @@
 	</head>
 	<body>
 		<header>
-			<h1>GOIM-karkeis abaesik</h1>
-			<p>Sistēma goim-karkeis abaesik.</p>
+			<h1>四則計算</h1>
+			<p>四則演算用の計算機</p>
 
 			<h2>目次</h2>
 			<ol>
-				<li><a href="#sec_calculator">計算機</a></li>
-				<li><a href="#sec_formula">式の入力方法</a></li>
-				<li><a href="#sec_output">出力の形式</a></li>
-				<li><a href="#sec_error">エラーの説明</a></li>
+				<li><a href="#secCalculator">計算機</a></li>
+				<li><a href="#secFormula">式の入力方法</a></li>
+				<li><a href="#secOutput">出力の形式</a></li>
+				<li><a href="#secError">エラーの説明</a></li>
 			</ol>
 		</header>
 		<main>
-			<section id="sec_calculator">
-				<h2>使い方</h2>
+			<section id="secCalculator">
+				<h2>計算機</h2>
+
+				<h3>使い方</h3>
 				<p>入力欄に計算式を入力する</p>
 
-				<div id="formula">入力欄</div>
-				<input type="text" aria-labelledby="formula">
-				<button type="button" onclick="calculator()">=</button>
+				<label for="formula">入力欄</label>
+				<div id="inputFormula">
+					<input type="text" name="formula" id="formula">
+					<button type="button" onclick="calculator()">=</button>
+				</div>
 
 				<p>計算結果</p>
 				<div id="output">0</div>
 			</section>
-			<section id="sec_formula">
+
+			<section id="secFormula">
 				<h2>式の入力方法</h2>
 				<p>入力方法の説明</p>
 
@@ -114,12 +119,13 @@
 					<li><strong><code>1/0</code></strong></li>
 				</ul>
 			</section>
-			<section id="sec_output">
+
+			<section id="secOutput">
 				<h2>出力の形式</h2>
 				<p>処理中にエラーが発生するとエラーを出力する</p>
 				<ul>
 					<li>入力していないときの出力は<strong><code>Error 1: 何も入力されていません[fn scan_input()]</code></strong></li>
-					<li>エラーに関する詳細は<a href="#sec_error">エラーの説明</a>で確認</li>
+					<li>エラーに関する詳細は<a href="#secError">エラーの説明</a>で確認</li>
 				</ul>
 
 				<p>計算結果は少数第10位まで表示され、それより小さい数は少数第11位を四捨五入する</p>
@@ -134,7 +140,8 @@
 					<li><strong><code>65535/1234</code></strong>は<strong><code>53.10777958</code></strong></li>
 				</ul>
 			</section>
-			<section id="sec_error">
+
+			<section id="secError">
 				<h2>エラーの説明</h2>
 				<p>式が解釈できない場合、計算結果の代わりにエラーメッセージを返す</p>
 				<ul>
@@ -144,19 +151,19 @@
 				<h3>エラーメッセージの一覧</h3>
 				<table>
 					<tr><th>エラー番号</th><th>エラーメッセージ</th></tr>
-					<tr><td class="id">1</td><td>何も入力されていません</td></tr>
-					<tr><td class="id">2</td><td>式が長すぎます</td></tr>
-					<tr><td class="id">3</td><td>無効な文字が入っています</td></tr>
-					<tr><td class="id">4</td><td>先頭に無効な文字が入っています</td></tr>
-					<tr><td class="id">5</td><td>末尾に無効な文字が入っています</td></tr>
-					<tr><td class="id">6</td><td>数値の前に無効な文字が入っています</td></tr>
-					<tr><td class="id">7</td><td>演算子の前に無効な文字が入っています</td></tr>
-					<tr><td class="id">8</td><td>( の前に無効な文字が入っています</td></tr>
-					<tr><td class="id">9</td><td>この数値は無効です</td></tr>
-					<tr><td class="id">10</td><td>この演算子は使用できません</td></tr>
-					<tr><td class="id">11</td><td>対応する () が見つかりません</td></tr>
-					<tr><td class="id">12</td><td>ゼロ除算はできません</td></tr>
-					<tr><td class="id">_</td><td>未知のエラーです</td></tr>
+					<tr><td class="errorNo">1</td><td>何も入力されていません</td></tr>
+					<tr><td class="errorNo">2</td><td>式が長すぎます</td></tr>
+					<tr><td class="errorNo">3</td><td>無効な文字が入っています</td></tr>
+					<tr><td class="errorNo">4</td><td>先頭に無効な文字が入っています</td></tr>
+					<tr><td class="errorNo">5</td><td>末尾に無効な文字が入っています</td></tr>
+					<tr><td class="errorNo">6</td><td>数値の前に無効な文字が入っています</td></tr>
+					<tr><td class="errorNo">7</td><td>演算子の前に無効な文字が入っています</td></tr>
+					<tr><td class="errorNo">8</td><td>( の前に無効な文字が入っています</td></tr>
+					<tr><td class="errorNo">9</td><td>この数値は無効です</td></tr>
+					<tr><td class="errorNo">10</td><td>この演算子は使用できません</td></tr>
+					<tr><td class="errorNo">11</td><td>対応する () が見つかりません</td></tr>
+					<tr><td class="errorNo">12</td><td>ゼロ除算はできません</td></tr>
+					<tr><td class="errorNo">_</td><td>未知のエラーです</td></tr>
 				</table>
 			</section>
 		</main>

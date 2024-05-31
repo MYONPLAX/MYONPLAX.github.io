@@ -4,20 +4,31 @@ main {
 	width: 90vw;
 }
 
-input {
+div#inputFormula {
+	display: flex;
+	align-items: center;
 	height: 2rem;
+}
+
+div#inputFormula > * {
+	height: inherit;
+	font-family: 'Oxanium', 'Noto Sans', sans-serif;
+}
+
+input#formula {
+	margin-right: 5px;
+	padding: 0 0.5rem;
 	background-color: var(--color-gray);
 	border: none;
 	outline: none;
+	appearance: none;
 }
 
 button {
-	width: 2.5rem;
-	height: 2rem;
+	aspect-ratio: 1 / 1;
 	border: none;
 	border-bottom: solid 0.2rem;
 	border-color: var(--color-gray);
-	font-family: 'Oxanium', 'Noto Color Emoji', 'Noto Sans', sans-serif;
 }
 
 button:hover { border-bottom-color: var(--color-dark); }
@@ -44,4 +55,4 @@ th, td { padding: 0.2rem; }
 	text-align: center;
 }
 
-.id { text-align: center; }
+.errorNo { text-align: center; }
