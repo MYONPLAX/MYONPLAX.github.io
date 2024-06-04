@@ -82,19 +82,19 @@ function getStringFromWasm0(ptr, len) {
     return cachedTextDecoder.decode(getUint8Memory0().subarray(ptr, ptr + len));
 }
 /**
-* @param {string} form
-* @param {number} err_lv
-* @param {number} err_lang
+* @param {string} formula
+* @param {number} error_level
+* @param {number} error_lang
 * @returns {string}
 */
-export function calculate(form, err_lv, err_lang) {
+export function calculate(formula, error_level, error_lang) {
     let deferred2_0;
     let deferred2_1;
     try {
         const retptr = wasm.__wbindgen_add_to_stack_pointer(-16);
-        const ptr0 = passStringToWasm0(form, wasm.__wbindgen_export_0, wasm.__wbindgen_export_1);
+        const ptr0 = passStringToWasm0(formula, wasm.__wbindgen_export_0, wasm.__wbindgen_export_1);
         const len0 = WASM_VECTOR_LEN;
-        wasm.calculate(retptr, ptr0, len0, err_lv, err_lang);
+        wasm.calculate(retptr, ptr0, len0, error_level, error_lang);
         var r0 = getInt32Memory0()[retptr / 4 + 0];
         var r1 = getInt32Memory0()[retptr / 4 + 1];
         deferred2_0 = r0;
