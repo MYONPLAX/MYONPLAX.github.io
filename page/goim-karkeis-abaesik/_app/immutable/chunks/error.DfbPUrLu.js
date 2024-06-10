@@ -1,0 +1,1 @@
+const e="Error description",t="If the formula cannot be interpreted, an error message is returned instead of the calculation result",r={title:e,description:t};export{r as default,t as description,e as title};
