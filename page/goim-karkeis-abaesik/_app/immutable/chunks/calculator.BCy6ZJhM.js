@@ -1,0 +1,1 @@
+const l="Calculator",e="Error Level",t="Enter your formula below:",r="Calculation Result:",o={title:l,errorLevel:e,label:t,result:r};export{o as default,e as errorLevel,t as label,r as result,l as title};

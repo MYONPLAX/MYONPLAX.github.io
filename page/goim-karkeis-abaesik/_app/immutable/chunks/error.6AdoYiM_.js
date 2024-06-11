@@ -1,0 +1,1 @@
+const t="エラーメッセージの詳細",e="式が解釈できない場合は計算結果の代わりにエラーメッセージを返す",i={title:"エラーメッセージのレベル",description:"エラーの詳細度と情報の具体性に基づいて3つのレベル（Tiny、Medium、Full）のエラーメッセージを表示する"},l={title:t,description:e,level:i};export{l as default,e as description,i as level,t as title};

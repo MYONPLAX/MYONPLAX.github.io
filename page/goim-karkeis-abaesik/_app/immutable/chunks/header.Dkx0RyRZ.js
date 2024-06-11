@@ -1,1 +1,0 @@
-const t="Language",e="Arithmetic calculator",a="Calculator based by WebAssembly for 4 basic arithmetic calculation",c="Index",i={language:t,title:e,description:a,index:c};export{i as default,a as description,c as index,t as language,e as title};

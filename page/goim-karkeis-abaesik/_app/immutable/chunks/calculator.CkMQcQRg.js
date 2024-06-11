@@ -1,1 +1,0 @@
-const t="計算機",e={title:"使い方",description:"入力欄に計算式を入力する"},l="エラーレベル",s="入力欄",o="計算結果",r={title:t,using:e,errorLevel:l,label:s,result:o};export{r as default,l as errorLevel,s as label,o as result,t as title,e as using};

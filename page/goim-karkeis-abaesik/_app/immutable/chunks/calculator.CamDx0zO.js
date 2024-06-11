@@ -1,1 +1,0 @@
-const t="Calculator",e={title:"How to use",description:"Write formula in input field"},l="Error Level",r="Formula input field",o="Result",s={title:t,using:e,errorLevel:l,label:r,result:o};export{s as default,l as errorLevel,r as label,o as result,t as title,e as using};
