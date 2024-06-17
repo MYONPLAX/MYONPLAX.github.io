@@ -1,0 +1,45 @@
+:root {
+  --color-dark: #333333;
+  --color-grey: #cccccc;
+  --color-link: #3333ff;
+  --color-link-hover: #009998;
+  --color-link-active: #f57a7a;
+}
+
+body {
+  font-family: "Noto Sans", "BIZ UDGothic", system-ui, sans-serif;
+}
+
+p > code,
+li > code,
+dd > code {
+  font-weight: bold;
+  background-color: var(--color-grey);
+  margin: 0 0.25rem;
+  padding: 0 0.2rem;
+  border-radius: 2.5px;
+}
+
+dfn {
+  font-style: normal;
+}
+
+div.table__wrapper {
+  overflow-x: auto;
+}
+
+table,
+th,
+td {
+  border: solid 1px var(--color-dark);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.2rem;
+}
+
+td.center {
+  text-align: center;
+}
